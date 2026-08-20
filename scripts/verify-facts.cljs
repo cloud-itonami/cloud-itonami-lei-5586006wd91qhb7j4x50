@@ -1,4 +1,18 @@
 #!/usr/bin/env nbb
+;; VENDORED from com-junkawasaki/root (scripts/lei-verify-facts.cljs), root
+;; pinned at 6846befd962542757e2decdc95895dcb78956f1b. Do not edit here.
+;;
+;; This copy is deliberate, not an oversight. What makes this repository an
+;; archive is that a single `git clone` of it can be checked against the live
+;; registry with no workspace, no west, and no dependency resolution. Depending
+;; on a shared file would take that away, so the file is copied instead.
+;;
+;; The obligation that creates -- that the copy still matches what it names --
+;; is checked by `scripts/verify-vendored-copies.cljs` in the superproject,
+;; which diffs from the `(ns` form down, so this header is not counted as
+;; drift. Fix anything wrong here in the canonical and re-vendor; an edit made
+;; only here is a fork, and it will be reported as one.
+;;
 ;; Re-fetch every public registry source facts.edn cites, and fail if the live
 ;; record no longer says what this repository recorded.
 ;;
